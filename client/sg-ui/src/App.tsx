@@ -1,10 +1,13 @@
+import CircularProgress from "@mui/material/CircularProgress"
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h1>Smarden Garden</h1>
+      <h1>Smarden Gardeners' Society</h1>
+      <p>Logging in... </p>
+      <p><CircularProgress /></p>
     </>
   )
 }
