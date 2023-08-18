@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,4 +9,21 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        // TODO: Extract to var
+        appId: '250563513965473',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v17.0',
+      });
+    };
+  </script>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js"
+  ></script>
 </html>
